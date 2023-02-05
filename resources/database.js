@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 import { MongoMemoryServer } from "mongodb-memory-server";
-const prodDatabase = "mongodb+srv://uiDbAdmin:uiDbAdmin.1@cluster0.koimtmb.mongodb.net/?retryWrites=true&w=majority"
+const prodDatabase = "" // TODO: move to .env file
 
 async function createDatabaseClient({ testDatabase = false } = {}) {
     let mongoServer
